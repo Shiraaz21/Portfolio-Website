@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@mariohamann/activity-graph/dist/activity-graph.min.js"
+></script>
+</head>
+<body class="">
+
+  <div class="container">
+   <!----- Navbar ------>
+<nav class="navbar">
+  <!-- Theme toggle -->
+  <div class="box theme">
+    <div class="item" onclick="theme()">
+      <ion-icon id="lightBtn" name="sunny-outline"></ion-icon>
+      <ion-icon id="darkBtn" name="moon-outline" style="display: none;"></ion-icon>
+    </div>
+  </div>
+
+  <!-- Navigation links -->
+  <div class="box nav">
+    <div class="item active">
+      <a href="#about">
+        <ion-icon name="person-circle-outline"></ion-icon>
+        <p>About</p>
+      </a>
+      <div class="divider rtl"></div>
+    </div>
+
+    <div class="item">
+      <a href="#resume">
+        <ion-icon name="file-tray-full-outline"></ion-icon>
+        <p>Resume</p>
+      </a>
+      <div class="divider rtl"></div>
+    </div>
+
+    <div class="item">
+      <a href="#projects">
+        <ion-icon name="layers-outline"></ion-icon>
+        <p>Projects</p>
+      </a>
+      <div class="divider rtl"></div>
+    </div>
+
+    <div class="item">
+      <a href="#blogs">
+        <ion-icon name="reader-outline"></ion-icon>
+        <p>Blogs</p>
+      </a>
+      <div class="divider rtl"></div>
+    </div>
+
+    <div class="item">
+      <a href="#contact">
+        <ion-icon name="paper-plane-outline"></ion-icon>
+        <p>Contact</p>
+      </a>
+      <div class="divider rtl"></div>
+    </div>
+  </div>
+</nav>
+
+     <!----- Profile ------>
+    <div class="box profile">
+
+      <img src="images/ChatGPT Image Nov 5, 2025, 11_39_57 AM.png" alt="header Picture" class="header">
+      <img src="images/profile.jpg" alt="Profile Picture" class="img">
+      <h2>Shiraaz Dickinson</h2>
+      <p id="typed" class="coloured">Full-Stack Developer</p>
+
+      <ul>
+        <li><a href="#"><ion-icon name="logo-github"></ion-icon></a></li>
+        <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+        <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+        <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+      </ul>
+
+      <div class="footer">
+        <div class="divider rtl"></div>
+        <table>
+          <tr>
+            <td><a href="#resume">My Resume<ion-icon name="file-tray-full-outline"></ion-icon></a></td>
+            <td><a href="#contact">Contact Me<ion-icon name="call-outline"></ion-icon></a></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+     <!-----Content----->
+     <div class="box content">
+      <div class="wrapper">
+      <h2 id="about">Hey <span class="coloured">There!</span>👋</h2>
+      <div class="divider ltr"></div>
+      <p>I’m thrilled to tell you a little about myself. I have over two years of IT experience specializing in <span class="coloured"> web development, app development, and SQL databases.</span> If you need a motivated team player — let’s connect!</p>
+
+      <!-------achievements-------->
+    <section class="achievements">
+        <div><h3><ion-icon name="layers-outline"></ion-icon> 200</h3><p>Websites Designed</p></div>
+        <div><h3><ion-icon name="briefcase-outline"></ion-icon> 2+</h3><p>Years of Experience</p></div>
+        <div><h3><ion-icon name="rocket-outline"></ion-icon> 60</h3><p>Completed Projects</p></div>
+    </section>
+
+    <!------skills------->
+    <h2 id="resume">My <span class="coloured">Skills</span></h2>
+    <div class="divider ltr"></div>
+      <section class="skills">
+        <div><ion-icon name="logo-html5"></ion-icon><p>HTML5</p></div>
+        <div><ion-icon name="logo-css3"></ion-icon><p>CSS</p></div>
+        <div><ion-icon name="logo-javascript"></ion-icon><p>JavaScript</p></div>
+        <div><ion-icon name="logo-python"></ion-icon><p>Python</p></div>
+        <div><div class="circle" style="--percent:65%"><h4>65<small>%</small></h4></div><p>MySQL</p></div>
+        <div><div class="circle" style="--percent:85%"><h4>85<small>%</small></h4></div><p>MySQL (Advanced)</p></div>
+        <div>
+          <div class="progress-bar">
+            <p>Node.js <span>90%</span></p>
+            <progress value="90" max="100"></progress>
+          </div>
+          <div class="progress-bar">
+            <p>PostgreSQL <span>75%</span></p>
+            <progress value="75" max="100"></progress>
+          </div>
+        </div>
+      </section>
+
+       <!-----Experience----->
+       <h2 id="resume">My <span class="coloured">Experience</span></h2>
+        <div class="divider ltr"></div>
+      <section class="experience">
+      <div class="experiences">
+        <h3>Senior Python Developer</h3>
+        <h4>Google Inc. <span class="date">Oct 2018 – Dec 2020</span></h4>
+        <p>Worked on scalable backend systems and data pipelines for global applications.</p>
+      </div>
+      <div class="experiences">
+        <h3>Database Developer</h3>
+        <h4>Freshworks Inc. <span class="date">Oct 2012 – Dec 2018</span></h4>
+        <p>Designed and optimized relational databases for enterprise clients.</p>
+      </div>
+      <div class="experiences">
+        <h3>Full Stack Developer</h3>
+        <h4>Integrity Software Inc. <span class="date">Oct 2010 – Dec 2012</span></h4>
+        <p>Built full-stack web applications with modern frameworks and responsive design.</p>
+      </div>
+      </section> 
+      <!-------contributions--------->
+      <h2>My <span class="coloured">Contributions</span></h2>
+         <div class="divider ltr"></div>
+         <section class="contribution">
+         <div class="wrapper">
+         <activity-graph
+         range-start="2023-01-01"
+         range-end="2025-12-31"
+         activity-levels="0,1,2,3,5"
+          activity-data="2025-06-26,2024-03-23,2023-05-20,2023-06-11,2023-06-11,2024-04-27,2023-09-28,2025-06-01,2023-10-11,2024-02-05,2023-07-02,2025-05-18,2025-10-13,2024-08-12,2023-06-10,2024-09-03,2023-04-07,2025-08-21,2023-07-08,2023-02-17,2023-12-29,2023-09-29,2023-09-12,2025-03-04,2023-02-14,2023-08-14,2024-05-30,2024-05-26,2024-01-29,2023-01-05,2024-11-20,2024-03-27,2025-01-05,2024-04-11,2023-11-03,2023-11-03,2025-06-14,2024-11-24,2024-12-02,2023-07-17,2024-10-23,2023-04-25,2024-07-28,2023-01-20,2025-09-23,2024-06-19,2024-05-16,2023-05-09,2024-02-17,2023-12-09,2024-07-07,2024-06-19,2023-06-02,2025-06-22,2024-06-19,2025-01-11,2023-04-11,2023-09-10,2025-03-09,2023-03-01,2023-03-01,2023-03-01,2024-04-12,2025-08-19,2023-02-12,2023-02-12,2023-05-20,2023-05-20,2024-08-21,2024-09-10,2023-10-04,2024-10-05,2024-03-10,2024-03-10,2023-01-06,2023-01-06,2023-01-06,2023-01-06,2023-07-14,2023-07-14,2024-10-05,2025-07-03,2025-07-03,2025-07-03,2023-08-01,2023-08-01,2023-08-01,2023-08-01,2025-11-02,2025-11-02,2024-12-20,2024-12-20,2024-12-20,2024-12-20,2025-02-08,2023-11-15,2023-11-15,2024-09-17,2024-02-22,2024-02-22,2024-02-22,2023-05-03,2023-05-03,2023-05-03,2024-01-08,2024-01-08,2024-01-08,2024-01-08,2025-05-07,2025-05-07,2025-05-07,2025-05-07,2024-06-01,2024-06-01,2024-06-01,2024-06-01,2023-10-29,2023-10-29,2024-04-03,2024-04-03,2024-04-03,2025-04-14,2025-04-14,2025-04-14,2024-05-03,2023-08-19,2023-08-19,2023-08-19,2025-09-10,2025-09-10,2024-07-21,2024-07-21,2023-12-19,2024-03-23,2024-03-23,2024-03-23,2023-06-11,2023-06-11,2024-09-09,2024-09-09,2024-09-09,2023-08-29,2023-08-29,2023-08-29,2025-12-15,2025-12-15,2025-12-15,2025-12-15,2024-11-09,2024-11-09,2024-11-09,2023-03-18,2023-03-18,2023-03-18,2025-02-12,2025-02-12,2025-02-12,2024-08-05,2024-08-05,2024-08-05,2023-09-01,2023-09-01,2023-09-01,2024-01-28,2024-01-28,2024-01-28,2023-04-05,2023-04-05,2023-04-05,2024-12-02,2024-12-02,2024-12-02,2023-06-10,2023-06-10,2023-06-10,2025-10-05,2025-10-05,2024-05-26,2024-05-26,2024-05-26,2024-05-26,2023-01-20,2023-01-20,2023-01-20,2023-01-20,2023-11-28,2023-11-28,2023-11-28,2025-03-25,2025-03-25,2025-03-25,2023-02-14,2023-02-14,2023-02-14,2024-10-23,2024-10-23,2024-10-23,2023-07-02,2023-07-02,2023-07-02,2025-06-01,2025-06-01,2025-06-01,2024-04-27,2024-04-27,2024-04-27,2023-04-25,2023-04-25,2023-04-25,2023-09-12,2023-09-12,2023-09-12,2024-03-27,2024-03-27,2024-03-27,2025-06-14,2025-06-14,2025-06-14,2024-02-05,2024-02-05,2023-07-17,2023-07-17,2023-07-17,2024-03-10,2024-03-10,2024-03-10,2024-03-10,2023-04-07,2023-04-07,2023-04-07,2025-01-05,2025-01-05,2025-01-05,2023-10-11,2023-10-11,2023-10-11,2024-06-19,2024-06-19,2024-06-19,2023-05-09,2023-05-09,2023-05-09,2025-05-18,2025-05-18,2025-05-18,2025-10-13,2025-10-13,2025-10-13,2024-08-12,2024-08-12,2024-08-12,2023-06-02,2023-06-02,2023-06-02,2024-01-29,2024-01-29,2024-01-29,2024-11-20,2024-11-20,2024-11-20,2025-09-23,2025-09-23,2025-09-23,2023-09-29,2023-09-29,2023-09-29,2023-12-29,2023-12-29,2023-12-29,2023-11-03,2023-11-03,2023-11-03"
+          ></activity-graph>
+       </div>
+      </section>
+        <!-------projects-------->
+        <h2 id="projects">My <span class="coloured">Projects</span></h2>
+          <div class="divider ltr"></div>
+
+        <section class="projects">
+        <div class="project-1">
+          <img src="images/nat-WDifRvOTKFM-unsplash.jpg" alt="">
+          <h3>Project <span class="coloured">Title-1</span></h3></div>
+          <div class="project-2">
+          <img src="images/nat-WDifRvOTKFM-unsplash.jpg" alt="">
+          <h3>Project <span class="coloured">Title-2</span></h3></div>
+          <div class="project-3">
+          <img src="images/nat-WDifRvOTKFM-unsplash.jpg" alt="">
+          <h3>Project <span class="coloured">Title-3</span></h3></div>
+          <div class="project-4">
+          <img src="images/nat-WDifRvOTKFM-unsplash.jpg" alt="">
+          <h3>Project <span class="coloured">Title-4</span></h3></div>
+          <div class="project-5">
+          <img src="images/nat-WDifRvOTKFM-unsplash.jpg" alt="">
+          <h3>Project <span class="coloured">Title-5</span></h3></div>
+          <div class="project-6">
+          <img src="images/nat-WDifRvOTKFM-unsplash.jpg" alt="">
+          <h3>Project <span class="coloured">Title-6</span></h3></div>
+          <div class="project-7">
+          <img src="images/nat-WDifRvOTKFM-unsplash.jpg" alt="">
+          <h3>Project <span class="coloured">Title-7</span></h3></div>
+      </section>
+
+      <!-------blogs---------->
+      <h2 id="blogs">My <span class="coloured">Blogs</span></h2>
+        <div class="divider ltr"></div>
+      <secrion class="blogs">
+        <div class="blog-box">
+          <img src="images/thought-catalog-505eectW54k-unsplash.jpg" alt="">
+             <div>
+               <h3>Web Design Tools</h3>
+               <p>Explore the latest tools for modern web design and development workflows.</p>
+               <span class="link"><a href="#">Read More</a><ion-icon name="caret-forward-outline"></ion-icon></span>
+             </div>
+        </div>
+                <div class="blog-box">
+          <img src="images/thought-catalog-505eectW54k-unsplash.jpg" alt="">
+             <div>
+               <h3>Web Design Tools</h3>
+               <p>Explore the latest tools for modern web design and development workflows.</p>
+               <span class="link"><a href="#">Read More</a><ion-icon name="caret-forward-outline"></ion-icon></span>
+             </div>
+        </div>
+                <div class="blog-box">
+          <img src="images/thought-catalog-505eectW54k-unsplash.jpg" alt="">
+             <div>
+               <h3>Web Design Tools</h3>
+               <p>Explore the latest tools for modern web design and development workflows.</p>
+               <span class="link"><a href="#">Read More</a><ion-icon name="caret-forward-outline"></ion-icon></span>
+             </div>
+        </div>
+      </secrion>
+      <!-------testimonies------->
+      <br><h2 id="testimonials">My<span class="coloured">Testimonials</span></h2>
+        <div class="divider ltr"></div>
+
+        <section class="testimonials">
+          <div class="testimonials-box">
+            <h1>What <span class="coloured"> Clients Say About me? </span></h1>
+          </div>
+          <div class="testimonials-box">
+    <img src="images/profile-pic.webp" alt="Client 1">
+    <span>
+      <ion-icon name="star"></ion-icon>
+      <ion-icon name="star"></ion-icon>
+      <ion-icon name="star"></ion-icon>
+      <ion-icon name="star"></ion-icon>
+      <ion-icon name="star"></ion-icon>
+    </span>
+    <h3>Dan Grommes</h3>
+    <i>Manager at Google Inc.</i>
+    <p>Shiraaz is a brilliant developer with a keen eye for detail and user experience.</p>
+  </div>
+
+  <div class="testimonials-box">
+  <img src="images/client2.webp" alt="Client 2">
+  <span>
+    <ion-icon name="star"></ion-icon>
+    <ion-icon name="star"></ion-icon>
+    <ion-icon name="star"></ion-icon>
+    <ion-icon name="star"></ion-icon>
+    <ion-icon name="star-outline"></ion-icon>
+  </span>
+  <h3>Priya Naidoo</h3>
+  <i>Lead Designer at CodeCraft Studio</i>
+  <p>Shiraaz brought our vision to life with precision and flair. His attention to detail is unmatched.</p>
+</div>
+
+<div class="testimonials-box">
+  <img src="images/client3.webp" alt="Client 3">
+  <span>
+    <ion-icon name="star"></ion-icon>
+    <ion-icon name="star"></ion-icon>
+    <ion-icon name="star"></ion-icon>
+    <ion-icon name="star"></ion-icon>
+    <ion-icon name="star"></ion-icon>
+  </span>
+  <h3>Michael Dlamini</h3>
+  <i>CTO at NovaTech Solutions</i>
+  <p>Working with Shiraaz was seamless. He’s a problem-solver with a deep understanding of user experience.</p>
+</div>
+        </section>
+         <h2 id="contact">Contact <span class="coloured">Me</span></h2>
+        <div class="divider ltr"></div>
+      <section class="contact">
+        <iframe class="map" width="100%" height="300" frameborder="0" src="https://www.google.com/maps/search/westgate+mall/@-26.3516248,27.8578574,10z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI1MTEwMi4wIKXMDSoASAFQAw%3D%3D"></iframe>
+        <form action="#" class="contact-form">
+          <input type="text" class="input" placeholder="Your Name" required />
+          <input type="text" class="input" placeholder="Last Name" required />
+           <input type="email" class="input" placeholder="Your Email" required />
+          <input type="text" class="input" placeholder="Subject" required />
+          <textarea rows="5" class="input" placeholder="Message" required></textarea>
+          <button type="submit" class="submit">
+            Send Message <ion-icon name="paper-plane-outline"></ion-icon>
+          </button>
+        </form>
+      </section>
+
+  </div>
+  </div>
+  </div>
+ 
+</body>
+</html>
