@@ -177,6 +177,120 @@ body.light{
   color: var(--accent-4);
 }
 
+/* education */
+.cv-section {
+  margin-top: 2rem;
+}
+
+.cv-section p {
+  display: block;        /* ensures full-width block element */
+  width: 100%;           /* forces it to span the container */
+  margin: 0 auto;        /* centers if needed */
+  line-height: 1.6;
+  font-size: 1rem;
+  color: var(--accent-1);
+}
+.cv-section.summary {
+  grid-column: 1 / -1;   /* makes it stretch across the entire grid */
+}
+
+
+.cv-section h2 {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.edu-item {
+  background: var(--accent-4);
+  padding: 1rem;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+  border-left: 4px solid var(--primary-color);
+}
+
+.edu-item h3 {
+  color: var(--accent-2);
+  margin-bottom: 0.3rem;
+}
+
+.edu-item p {
+  margin: 0.2rem 0;
+  color: var(--accent-1);
+}
+
+.hobbies ul {
+  list-style: disc;
+  padding-left: 1.5rem;
+}
+
+.hobbies li {
+  margin-bottom: 0.3rem;
+  color: var(--accent-1);
+}
+.languages {
+  margin-top: 2rem;
+}
+
+.languages h2 {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.language-bar {
+  margin-bottom: 1rem;
+}
+
+.language-bar span {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+  color: var(--accent-1);
+}
+
+.bar {
+  background-color: var(--accent-4);
+  border-radius: 10px;
+  height: 10px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.fill {
+  height: 100%;
+  background-color: var(--primary-color);
+  transition: width 0.5s ease;
+}
+
+.courses {
+  margin-top: 2rem;
+}
+
+.courses h2 {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.course-list {
+  list-style: none;
+  padding-left: 0;
+  display: grid;
+  gap: 1rem;
+}
+
+.course-list li {
+  background-color: var(--accent-4);
+  padding: 1rem;
+  border-radius: 10px;
+  border-left: 4px solid var(--primary-color);
+  color: var(--accent-1);
+  transition: background-color 0.3s ease;
+}
+
+.course-list li:hover {
+  background-color: var(--accent-3);
+}
+
+
 /* Content */
 
 .content{
@@ -463,7 +577,7 @@ body.light .contribution activity-graph {
   height: fit-content;
   opacity: 0;
   transition: opacity 0.5s;
-  color: var(--accent-4);
+  color: white;
 }
 
 .projects div:hover h3 {
@@ -472,65 +586,6 @@ body.light .contribution activity-graph {
 
 body.light .projects h3 {
   color: var(--accent-4);
-}
-
-/* blog */
-.blog {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px;
-}
-
-.blog-box img {
-  width: 100%;
-  border-radius: 7px;
-}
-
-.blog-box {
-  cursor: pointer;
-  border: var(--accent-4) 3px solid;
-  padding: 10px;
-  border-radius: 10px;
-  background-color: var(--accent-4);
-  transition: background-color 0.5s, border-color 0.5s;
-}
-
-.blog-box div {
-  padding-top: 10px;
-  border-radius: 10px;
-  transform: background-color 0.5s;
-}
-
-.blog-box p {
-  color: var(--accent-2);
-}
-
-.blog-boxp, .blog-box h3 {
-  margin: 0;
-  transition: color 0.5s;
-}
-
-.blog-box:hover {
-  border-color: var(--primary-color);
-}
-
-.blog-box:hover h3 {
-  color: var(--primary-color);
-}
-
-.blog-box a, .blog-box ion-icon {
-  color: var(--primary-color);
-  transition: color 0.5s, padding-left 0.5s;
-}
-
-.blog-box .link:hover ion-icon {
-  padding-left: 5px;
-}
-
-.blog-box .link {
-  display: flex;
-  align-items: center;
-  padding-top: 10px;
 }
 
 /* testimonials */
@@ -576,6 +631,27 @@ body.light .projects h3 {
 .testimonials h1 {
   font-size: 2.3em;
 }
+
+.summary {
+  margin-top: 2rem;
+  display: inline-block;
+}
+
+.summary h2 {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.summary p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--accent-1);
+}
+
+.summary strong {
+  color: var(--primary-color);
+}
+
 
 /* contact */
 .contact {
@@ -733,9 +809,7 @@ body:not(.light) .map {
       "p6"
       "p7";
   }
-  .blogs {
-  grid-template-columns: 1fr;
-  }
+
   .testimonials {
   grid-template-columns: 1fr;
 }
